@@ -3,6 +3,8 @@
 .header {
     padding: 5rem 0;
     position: relative;
+
+    
     &::before { //Usamos & para que no cree un espacio en app.css
         content: '';
         background-color: v.$negro;
@@ -11,13 +13,14 @@
         left: 0;
         right: 0;
         bottom: 0;
+        opacity: .6;
     }
     .contenido-header {
-        margin-top: 5rem;
+        position: relative;
     }
 }
 
 //header de cada página
 .header-inicio {
-    background-image: url(../../img/header_inicio.jpg);
+    background-image: url(./../img/header_inicio.jpg);
 }
