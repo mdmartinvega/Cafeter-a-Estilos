@@ -1,9 +1,13 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .header {
     padding: 5rem 0;
     position: relative;
 
+  @include m.telefono { 
+      
+   }
     
     &::before { //Usamos & para que no cree un espacio en app.css
         content: '';
