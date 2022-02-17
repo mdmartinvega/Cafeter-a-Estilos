@@ -4,11 +4,10 @@
 .header {
     padding: 5rem 0;
     position: relative;
+    @include m.tablet { 
+      min-height: 70rem;  
+    }
 
-  @include m.telefono { 
-      
-   }
-    
     &::before { //Usamos & para que no cree un espacio en app.css
         content: '';
         background-color: v.$negro;
@@ -21,10 +20,20 @@
     }
     .contenido-header {
         position: relative;
+
+        h1 {
+            text-align: center;
+            color: v.$blanco;
+            text-transform: uppercase;
+            margin-top: 5rem;
+            @include m.tablet { 
+                margin-top: 10rem; 
+            }
+        }
     }
 }
 
 //header de cada página
 .header-inicio {
-    background-image: url(./../img/header_inicio.jpg);
+    background-image: url(../../src/img/header_inicio.jpg);
 }
